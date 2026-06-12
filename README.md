@@ -91,10 +91,10 @@ If you use STRIKE in your work, please cite:
 
 ```bibtex
 @misc{maiti2024strike,
-  author       = {Swattik Maiti},
-  title        = {STRIKE: Stacking via Targeted Representations of Isolated Knowledge Extractors},
-  year         = {2025},
-  url          = {https://github.com/PerciValXIII/strike-credit-risk},
+  author       = {Swattik Maiti, Ritik Pratap Singh, Fardina Alam},
+  title        = {STRIKE: Additive Feature-Group-Aware Stacking Framework for Credit Default Prediction},
+  year         = {2026},
+  url          = {https://github.com/PerciValXIII/strike-credit-risk-ecml},
 }
 ```
 

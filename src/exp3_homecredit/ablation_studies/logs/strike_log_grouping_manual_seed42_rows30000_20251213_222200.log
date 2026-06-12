@@ -1,0 +1,234 @@
+2025-04-20 11:34:37,218 | INFO | 🚀 Starting model stacking pipeline
+2025-04-20 11:34:37,218 | INFO | 🔄 Starting: Loading Processed Datasets
+2025-04-20 11:34:43,478 | INFO | ✅ Completed: Loading Processed Datasets in 6.26 seconds
+
+2025-04-20 11:34:43,479 | INFO | 🔄 Starting: Demographic Base Models Training
+2025-04-20 11:35:35,062 | INFO | 🚀 Starting model stacking pipeline
+2025-04-20 11:35:35,062 | INFO | 🔄 Starting: Loading Processed Datasets
+2025-04-20 11:35:41,353 | INFO | ✅ Completed: Loading Processed Datasets in 6.29 seconds
+2025-04-20 11:35:41,353 | INFO | 🔄 Starting: Demographic Base Models Training
+2025-04-20 11:35:44,003 | INFO |    AUC for fold 1: 0.7439
+2025-04-20 11:35:46,205 | INFO |    AUC for fold 2: 0.7524
+2025-04-20 11:35:48,622 | INFO |    AUC for fold 3: 0.7477
+2025-04-20 11:35:50,822 | INFO |    AUC for fold 4: 0.7504
+2025-04-20 11:35:52,894 | INFO |    AUC for fold 5: 0.7459
+2025-04-20 11:35:52,947 | INFO | [demog] xgb FINAL OOF AUC: 0.7481
+2025-04-20 11:35:54,533 | INFO |    AUC for fold 1: 0.7520
+2025-04-20 11:35:56,033 | INFO |    AUC for fold 2: 0.7614
+2025-04-20 11:35:57,515 | INFO |    AUC for fold 3: 0.7547
+2025-04-20 11:35:58,980 | INFO |    AUC for fold 4: 0.7608
+2025-04-20 11:36:00,495 | INFO |    AUC for fold 5: 0.7526
+2025-04-20 11:36:00,549 | INFO | [demog] lgb FINAL OOF AUC: 0.7563
+2025-04-20 11:36:09,410 | INFO |    AUC for fold 1: 0.6675
+2025-04-20 11:36:19,483 | INFO |    AUC for fold 2: 0.6780
+2025-04-20 11:36:29,415 | INFO |    AUC for fold 3: 0.6776
+2025-04-20 11:36:38,184 | INFO |    AUC for fold 4: 0.6840
+2025-04-20 11:36:47,811 | INFO |    AUC for fold 5: 0.6774
+2025-04-20 11:36:47,876 | INFO | [demog] logreg FINAL OOF AUC: 0.6769
+2025-04-20 11:37:43,922 | INFO |    AUC for fold 1: 0.7042
+2025-04-20 11:38:40,843 | INFO |    AUC for fold 2: 0.7097
+2025-04-20 11:39:37,283 | INFO |    AUC for fold 3: 0.6996
+2025-04-20 11:40:34,544 | INFO |    AUC for fold 4: 0.7080
+2025-04-20 11:41:30,753 | INFO |    AUC for fold 5: 0.7017
+2025-04-20 11:41:30,895 | INFO | [demog] rf FINAL OOF AUC: 0.7046
+2025-04-20 11:41:52,426 | INFO |    AUC for fold 1: 0.5397
+2025-04-20 11:42:14,892 | INFO |    AUC for fold 2: 0.5460
+2025-04-20 11:42:38,180 | INFO |    AUC for fold 3: 0.5396
+2025-04-20 11:42:58,877 | INFO |    AUC for fold 4: 0.5440
+2025-04-20 11:43:20,058 | INFO |    AUC for fold 5: 0.5426
+2025-04-20 11:43:20,207 | INFO | [demog] knn FINAL OOF AUC: 0.5424
+2025-04-20 11:43:20,207 | INFO | [demog] ✅ Top 3 Models by AUC: ['lgb', 'xgb', 'rf']
+
+2025-04-20 11:43:20,508 | INFO | ✅ Completed: Demographic Base Models Training in 459.15 seconds
+
+2025-04-20 11:43:20,508 | INFO | 🔄 Starting: Delinquency Base Models Training
+2025-04-20 11:43:23,828 | INFO |    AUC for fold 1: 0.6709
+2025-04-20 11:43:26,781 | INFO |    AUC for fold 2: 0.6725
+2025-04-20 11:43:29,652 | INFO |    AUC for fold 3: 0.6655
+2025-04-20 11:43:32,504 | INFO |    AUC for fold 4: 0.6769
+2025-04-20 11:43:35,467 | INFO |    AUC for fold 5: 0.6697
+2025-04-20 11:43:35,509 | INFO | [deq] xgb FINAL OOF AUC: 0.6711
+2025-04-20 11:43:38,933 | INFO |    AUC for fold 1: 0.6831
+2025-04-20 11:43:42,307 | INFO |    AUC for fold 2: 0.6886
+2025-04-20 11:43:45,864 | INFO |    AUC for fold 3: 0.6799
+2025-04-20 11:43:49,418 | INFO |    AUC for fold 4: 0.6965
+2025-04-20 11:43:52,893 | INFO |    AUC for fold 5: 0.6851
+2025-04-20 11:43:52,936 | INFO | [deq] lgb FINAL OOF AUC: 0.6866
+2025-04-20 11:44:05,341 | INFO |    AUC for fold 1: 0.6346
+2025-04-20 11:44:15,254 | INFO |    AUC for fold 2: 0.6351
+2025-04-20 11:44:26,339 | INFO |    AUC for fold 3: 0.6297
+2025-04-20 11:44:38,074 | INFO |    AUC for fold 4: 0.6357
+2025-04-20 11:44:52,339 | INFO |    AUC for fold 5: 0.6335
+2025-04-20 11:44:52,391 | INFO | [deq] logreg FINAL OOF AUC: 0.6338
+2025-04-20 11:47:41,886 | INFO |    AUC for fold 1: 0.6421
+2025-04-20 11:50:27,626 | INFO |    AUC for fold 2: 0.6523
+2025-04-20 11:53:15,888 | INFO |    AUC for fold 3: 0.6376
+2025-04-20 11:56:05,753 | INFO |    AUC for fold 4: 0.6599
+2025-04-20 11:59:28,558 | INFO |    AUC for fold 5: 0.6489
+2025-04-20 11:59:28,673 | INFO | [deq] rf FINAL OOF AUC: 0.6481
+2025-04-20 11:59:51,175 | INFO |    AUC for fold 1: 0.5355
+2025-04-20 12:00:13,381 | INFO |    AUC for fold 2: 0.5381
+2025-04-20 12:00:35,923 | INFO |    AUC for fold 3: 0.5299
+2025-04-20 12:00:58,458 | INFO |    AUC for fold 4: 0.5391
+2025-04-20 12:01:21,602 | INFO |    AUC for fold 5: 0.5446
+2025-04-20 12:01:21,756 | INFO | [deq] knn FINAL OOF AUC: 0.5374
+2025-04-20 12:01:21,765 | INFO | [deq] ✅ Top 3 Models by AUC: ['lgb', 'xgb', 'rf']
+
+2025-04-20 12:01:22,254 | INFO | ✅ Completed: Delinquency Base Models Training in 1081.75 seconds
+
+2025-04-20 12:01:22,254 | INFO | 🔄 Starting: Vintage Base Models Training
+2025-04-20 12:01:22,836 | INFO |    AUC for fold 1: 0.6320
+2025-04-20 12:01:23,299 | INFO |    AUC for fold 2: 0.6288
+2025-04-20 12:01:23,761 | INFO |    AUC for fold 3: 0.6328
+2025-04-20 12:01:24,221 | INFO |    AUC for fold 4: 0.6313
+2025-04-20 12:01:24,691 | INFO |    AUC for fold 5: 0.6274
+2025-04-20 12:01:24,730 | INFO | [vin] xgb FINAL OOF AUC: 0.6304
+2025-04-20 12:01:25,215 | INFO |    AUC for fold 1: 0.6479
+2025-04-20 12:01:25,681 | INFO |    AUC for fold 2: 0.6418
+2025-04-20 12:01:26,156 | INFO |    AUC for fold 3: 0.6393
+2025-04-20 12:01:26,622 | INFO |    AUC for fold 4: 0.6445
+2025-04-20 12:01:27,089 | INFO |    AUC for fold 5: 0.6374
+2025-04-20 12:01:27,128 | INFO | [vin] lgb FINAL OOF AUC: 0.6421
+2025-04-20 12:01:28,075 | INFO |    AUC for fold 1: 0.6200
+2025-04-20 12:01:28,744 | INFO |    AUC for fold 2: 0.6196
+2025-04-20 12:01:29,702 | INFO |    AUC for fold 3: 0.6225
+2025-04-20 12:01:30,565 | INFO |    AUC for fold 4: 0.6237
+2025-04-20 12:01:31,408 | INFO |    AUC for fold 5: 0.6168
+2025-04-20 12:01:31,457 | INFO | [vin] logreg FINAL OOF AUC: 0.6205
+2025-04-20 12:02:00,477 | INFO |    AUC for fold 1: 0.6079
+2025-04-20 12:02:29,179 | INFO |    AUC for fold 2: 0.6078
+2025-04-20 12:02:57,940 | INFO |    AUC for fold 3: 0.6107
+2025-04-20 12:03:26,849 | INFO |    AUC for fold 4: 0.6102
+2025-04-20 12:03:55,536 | INFO |    AUC for fold 5: 0.6015
+2025-04-20 12:03:55,658 | INFO | [vin] rf FINAL OOF AUC: 0.6076
+2025-04-20 12:04:00,016 | INFO |    AUC for fold 1: 0.5347
+2025-04-20 12:04:04,378 | INFO |    AUC for fold 2: 0.5387
+2025-04-20 12:04:08,682 | INFO |    AUC for fold 3: 0.5321
+2025-04-20 12:04:12,964 | INFO |    AUC for fold 4: 0.5398
+2025-04-20 12:04:17,310 | INFO |    AUC for fold 5: 0.5420
+2025-04-20 12:04:17,356 | INFO | [vin] knn FINAL OOF AUC: 0.5375
+2025-04-20 12:04:17,356 | INFO | [vin] ✅ Top 3 Models by AUC: ['lgb', 'xgb', 'logreg']
+
+2025-04-20 12:04:17,416 | INFO | ✅ Completed: Vintage Base Models Training in 175.16 seconds
+
+2025-04-20 12:04:17,417 | INFO | 🔄 Starting: Target Table Creation
+2025-04-20 12:04:17,453 | INFO | ✅ Completed: Target Table Creation in 0.04 seconds
+
+2025-04-20 12:04:17,453 | INFO | 🔄 Starting: Meta Model Training
+2025-04-20 12:04:17,995 | INFO | [META] Logistic Regression AUC (CV): 0.7661
+2025-04-20 12:04:18,101 | INFO | ✅ Completed: Meta Model Training in 0.65 seconds
+2025-12-13 22:22:14,188 | INFO | 🚀 Starting STRIKE Home Credit Model Stacking Pipeline
+2025-12-13 22:22:14,188 | INFO | 🔄 Starting: Preprocessing DEMOG Features
+2025-12-13 22:22:16,066 | INFO | ✅ Completed: Preprocessing DEMOG Features in 1.88 seconds
+2025-12-13 22:22:16,066 | INFO | 🔄 Starting: Preprocessing DEQ Features
+2025-12-13 22:22:20,323 | INFO | ✅ Completed: Preprocessing DEQ Features in 4.26 seconds
+2025-12-13 22:22:20,324 | INFO | 🔄 Starting: Preprocessing Vintage Features
+2025-12-13 22:22:20,785 | INFO | ✅ Completed: Preprocessing Vintage Features in 0.46 seconds
+2025-12-13 22:22:20,786 | INFO | 🔄 Starting: Training Base Models on Demographic Features
+2025-12-13 22:22:21,231 | INFO |    AUC for fold 1: 0.6857
+2025-12-13 22:22:21,555 | INFO |    AUC for fold 2: 0.7191
+2025-12-13 22:22:21,877 | INFO |    AUC for fold 3: 0.7034
+2025-12-13 22:22:22,204 | INFO |    AUC for fold 4: 0.7127
+2025-12-13 22:22:22,531 | INFO |    AUC for fold 5: 0.7091
+2025-12-13 22:22:22,536 | INFO | [demog] xgb FINAL OOF AUC: 0.7058
+2025-12-13 22:22:22,952 | INFO |    AUC for fold 1: 0.7076
+2025-12-13 22:22:23,348 | INFO |    AUC for fold 2: 0.7422
+2025-12-13 22:22:23,737 | INFO |    AUC for fold 3: 0.7200
+2025-12-13 22:22:24,125 | INFO |    AUC for fold 4: 0.7295
+2025-12-13 22:22:24,514 | INFO |    AUC for fold 5: 0.7326
+2025-12-13 22:22:24,519 | INFO | [demog] lgb FINAL OOF AUC: 0.7261
+2025-12-13 22:22:25,059 | INFO |    AUC for fold 1: 0.6631
+2025-12-13 22:22:25,667 | INFO |    AUC for fold 2: 0.6766
+2025-12-13 22:22:26,349 | INFO |    AUC for fold 3: 0.6646
+2025-12-13 22:22:26,968 | INFO |    AUC for fold 4: 0.6625
+2025-12-13 22:22:27,517 | INFO |    AUC for fold 5: 0.6695
+2025-12-13 22:22:27,522 | INFO | [demog] logreg FINAL OOF AUC: 0.6672
+2025-12-13 22:22:31,326 | INFO |    AUC for fold 1: 0.6515
+2025-12-13 22:22:35,267 | INFO |    AUC for fold 2: 0.6780
+2025-12-13 22:22:39,031 | INFO |    AUC for fold 3: 0.6780
+2025-12-13 22:22:42,821 | INFO |    AUC for fold 4: 0.6634
+2025-12-13 22:22:46,555 | INFO |    AUC for fold 5: 0.6930
+2025-12-13 22:22:46,592 | INFO | [demog] rf FINAL OOF AUC: 0.6725
+2025-12-13 22:22:47,012 | INFO |    AUC for fold 1: 0.5434
+2025-12-13 22:22:47,411 | INFO |    AUC for fold 2: 0.5428
+2025-12-13 22:22:47,810 | INFO |    AUC for fold 3: 0.5585
+2025-12-13 22:22:48,222 | INFO |    AUC for fold 4: 0.5390
+2025-12-13 22:22:48,584 | INFO |    AUC for fold 5: 0.5287
+2025-12-13 22:22:48,610 | INFO | [demog] knn FINAL OOF AUC: 0.5425
+2025-12-13 22:22:48,614 | INFO | [demog] ✅ Top 3 Models by AUC: ['lgb', 'xgb', 'rf']
+
+2025-12-13 22:22:48,631 | INFO | ✅ Completed: Training Base Models on Demographic Features in 27.85 seconds
+2025-12-13 22:22:48,632 | INFO | 🔄 Starting: Training Base Models on Delinquency Features
+2025-12-13 22:22:49,281 | INFO |    AUC for fold 1: 0.6117
+2025-12-13 22:22:49,997 | INFO |    AUC for fold 2: 0.6143
+2025-12-13 22:22:50,622 | INFO |    AUC for fold 3: 0.6324
+2025-12-13 22:22:51,241 | INFO |    AUC for fold 4: 0.5747
+2025-12-13 22:22:51,880 | INFO |    AUC for fold 5: 0.6254
+2025-12-13 22:22:51,885 | INFO | [deq] xgb FINAL OOF AUC: 0.6117
+2025-12-13 22:22:52,680 | INFO |    AUC for fold 1: 0.6568
+2025-12-13 22:22:53,488 | INFO |    AUC for fold 2: 0.6522
+2025-12-13 22:22:54,275 | INFO |    AUC for fold 3: 0.6560
+2025-12-13 22:22:55,086 | INFO |    AUC for fold 4: 0.6094
+2025-12-13 22:22:55,957 | INFO |    AUC for fold 5: 0.6668
+2025-12-13 22:22:55,962 | INFO | [deq] lgb FINAL OOF AUC: 0.6479
+2025-12-13 22:22:56,747 | INFO |    AUC for fold 1: 0.6342
+2025-12-13 22:22:57,422 | INFO |    AUC for fold 2: 0.6417
+2025-12-13 22:22:58,070 | INFO |    AUC for fold 3: 0.6666
+2025-12-13 22:22:58,611 | INFO |    AUC for fold 4: 0.6160
+2025-12-13 22:22:59,057 | INFO |    AUC for fold 5: 0.6472
+2025-12-13 22:22:59,061 | INFO | [deq] logreg FINAL OOF AUC: 0.6409
+2025-12-13 22:23:10,690 | INFO |    AUC for fold 1: 0.6364
+2025-12-13 22:23:22,343 | INFO |    AUC for fold 2: 0.6304
+2025-12-13 22:23:33,998 | INFO |    AUC for fold 3: 0.6483
+2025-12-13 22:23:45,143 | INFO |    AUC for fold 4: 0.6198
+2025-12-13 22:23:56,239 | INFO |    AUC for fold 5: 0.6424
+2025-12-13 22:23:56,263 | INFO | [deq] rf FINAL OOF AUC: 0.6353
+2025-12-13 22:23:56,660 | INFO |    AUC for fold 1: 0.5292
+2025-12-13 22:23:57,095 | INFO |    AUC for fold 2: 0.5513
+2025-12-13 22:23:57,494 | INFO |    AUC for fold 3: 0.5609
+2025-12-13 22:23:57,949 | INFO |    AUC for fold 4: 0.5352
+2025-12-13 22:23:58,369 | INFO |    AUC for fold 5: 0.5426
+2025-12-13 22:23:58,394 | INFO | [deq] knn FINAL OOF AUC: 0.5439
+2025-12-13 22:23:58,394 | INFO | [deq] ✅ Top 3 Models by AUC: ['lgb', 'logreg', 'rf']
+
+2025-12-13 22:23:58,412 | INFO | ✅ Completed: Training Base Models on Delinquency Features in 69.78 seconds
+2025-12-13 22:23:58,412 | INFO | 🔄 Starting: Training Base Models on Vintage Features
+2025-12-13 22:23:58,612 | INFO |    AUC for fold 1: 0.5612
+2025-12-13 22:23:58,741 | INFO |    AUC for fold 2: 0.5854
+2025-12-13 22:23:58,873 | INFO |    AUC for fold 3: 0.5843
+2025-12-13 22:23:59,006 | INFO |    AUC for fold 4: 0.5803
+2025-12-13 22:23:59,135 | INFO |    AUC for fold 5: 0.5724
+2025-12-13 22:23:59,140 | INFO | [vin] xgb FINAL OOF AUC: 0.5764
+2025-12-13 22:23:59,433 | INFO |    AUC for fold 1: 0.5917
+2025-12-13 22:23:59,723 | INFO |    AUC for fold 2: 0.5911
+2025-12-13 22:24:00,014 | INFO |    AUC for fold 3: 0.5961
+2025-12-13 22:24:00,302 | INFO |    AUC for fold 4: 0.6072
+2025-12-13 22:24:00,593 | INFO |    AUC for fold 5: 0.5868
+2025-12-13 22:24:00,599 | INFO | [vin] lgb FINAL OOF AUC: 0.5944
+2025-12-13 22:24:00,654 | INFO |    AUC for fold 1: 0.5978
+2025-12-13 22:24:00,702 | INFO |    AUC for fold 2: 0.6133
+2025-12-13 22:24:00,758 | INFO |    AUC for fold 3: 0.6240
+2025-12-13 22:24:00,802 | INFO |    AUC for fold 4: 0.5948
+2025-12-13 22:24:00,908 | INFO |    AUC for fold 5: 0.5912
+2025-12-13 22:24:00,912 | INFO | [vin] logreg FINAL OOF AUC: 0.6041
+2025-12-13 22:24:03,155 | INFO |    AUC for fold 1: 0.5824
+2025-12-13 22:24:05,424 | INFO |    AUC for fold 2: 0.6076
+2025-12-13 22:24:07,660 | INFO |    AUC for fold 3: 0.5845
+2025-12-13 22:24:09,864 | INFO |    AUC for fold 4: 0.5780
+2025-12-13 22:24:12,093 | INFO |    AUC for fold 5: 0.5846
+2025-12-13 22:24:12,121 | INFO | [vin] rf FINAL OOF AUC: 0.5875
+2025-12-13 22:24:12,182 | INFO |    AUC for fold 1: 0.5278
+2025-12-13 22:24:12,249 | INFO |    AUC for fold 2: 0.5170
+2025-12-13 22:24:12,314 | INFO |    AUC for fold 3: 0.5148
+2025-12-13 22:24:12,376 | INFO |    AUC for fold 4: 0.4754
+2025-12-13 22:24:12,441 | INFO |    AUC for fold 5: 0.5160
+2025-12-13 22:24:12,445 | INFO | [vin] knn FINAL OOF AUC: 0.5101
+2025-12-13 22:24:12,445 | INFO | [vin] ✅ Top 3 Models by AUC: ['logreg', 'lgb', 'rf']
+
+2025-12-13 22:24:12,455 | INFO | ✅ Completed: Training Base Models on Vintage Features in 14.04 seconds
+2025-12-13 22:24:12,455 | INFO | 🔄 Starting: Creating Meta-Model Training Set
+2025-12-13 22:24:12,457 | INFO | ✅ Completed: Creating Meta-Model Training Set in 0.00 seconds
+2025-12-13 22:24:12,457 | INFO | 🔄 Starting: Training Meta-Model
+2025-12-13 22:24:12,529 | INFO | [META] Logistic Regression AUC (CV): 0.7382
+2025-12-13 22:24:12,553 | INFO | ✅ Completed: Training Meta-Model in 0.10 seconds
+2025-12-13 22:24:12,553 | INFO | 🎯 STRIKE Home Credit pipeline completed successfully.

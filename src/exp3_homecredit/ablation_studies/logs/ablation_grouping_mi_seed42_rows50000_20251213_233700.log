@@ -1,0 +1,9 @@
+2025-12-13 23:37:00 | INFO | 🚀 Starting ablation_grouping_logic | strategy=mi | grouping_seed=42 | rows=50000 | row_seed=123
+2025-12-13 23:37:04 | INFO | ✅ Backed up raw inputs → /Users/percival/Projects/strike-credit-risk/src/exp3_homecredit/ablation_studies/_tmp_backup/grouping_mi_seed42_rows50000_20251213_233700
+2025-12-13 23:37:09 | INFO | Using stratified subsample: 50000 rows (pos rate preserved)
+2025-12-13 23:37:51 | INFO | Grouping sizes | demog=120 | deq=320 | vin=46
+2025-12-13 23:37:56 | INFO | ✅ Wrote ablated raw CSVs (STRIKE filenames preserved).
+2025-12-13 23:37:56 | INFO | 🚀 Running STRIKE unchanged: /Users/percival/Projects/strike-credit-risk/src/exp3_homecredit/model_training/model_stacking_run.py
+2025-12-13 23:41:40 | INFO | ✅ Copied STRIKE log → /Users/percival/Projects/strike-credit-risk/src/exp3_homecredit/ablation_studies/logs/strike_log_grouping_mi_seed42_rows50000_20251213_233700.log
+2025-12-13 23:41:40 | INFO | 🎯 ablation_grouping_logic completed successfully.
+2025-12-13 23:41:44 | INFO | ✅ Restored original raw inputs.

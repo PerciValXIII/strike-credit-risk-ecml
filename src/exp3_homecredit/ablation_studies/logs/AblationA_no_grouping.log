@@ -1,0 +1,125 @@
+2025-12-13 16:34:38 | INFO | 🚀 Starting Ablation A (NO GROUPING, NUMERIC-ONLY, NO OHE)
+
+2025-12-13 16:34:38 | INFO | 🔄 Starting: Loading RAW datasets
+2025-12-13 16:34:42 | INFO | Demog RAW: (307511, 122)
+2025-12-13 16:34:42 | INFO | Deq RAW:   (263491, 322)
+2025-12-13 16:34:42 | INFO | Vin RAW:   (249507, 48)
+2025-12-13 16:34:42 | INFO | ✅ Completed: Loading RAW datasets in 4.51 seconds
+2025-12-13 16:34:42 | INFO | 🔄 Starting: Minimal preprocessing (NO OHE)
+2025-12-13 16:34:46 | INFO | Demog cleaned: (307511, 106)
+2025-12-13 16:34:46 | INFO | Deq cleaned:   (263491, 321)
+2025-12-13 16:34:46 | INFO | Vin cleaned:   (249507, 47)
+2025-12-13 16:34:46 | INFO | ✅ Completed: Minimal preprocessing (NO OHE) in 4.25 seconds
+2025-12-13 16:34:46 | INFO | 🔄 Starting: Merging datasets
+2025-12-13 16:34:49 | INFO | Merged shape: (249507, 472)
+2025-12-13 16:34:49 | INFO | ✅ Completed: Merging datasets in 2.89 seconds
+2025-12-13 16:34:49 | INFO | 🔄 Starting: Train/Test Split
+2025-12-13 16:34:50 | INFO | Train RAW: (187130, 472)
+2025-12-13 16:34:50 | INFO | Test RAW:  (62377, 472)
+2025-12-13 16:34:50 | INFO | ✅ Completed: Train/Test Split in 0.32 seconds
+2025-12-13 16:34:50 | INFO | 🔄 Starting: Scaling (fit on train → transform test)
+2025-12-13 16:34:51 | INFO | Scaled Train: (187130, 472)
+2025-12-13 16:34:51 | INFO | Scaled Test:  (62377, 472)
+2025-12-13 16:34:51 | INFO | ✅ Completed: Scaling (fit on train → transform test) in 1.14 seconds
+2025-12-13 16:34:51 | INFO | 🔄 Starting: Training Base Models on ALL features
+2025-12-13 16:34:55 | INFO |    AUC for fold 1: 0.7500
+2025-12-13 16:34:58 | INFO |    AUC for fold 2: 0.7583
+2025-12-13 16:35:02 | INFO |    AUC for fold 3: 0.7416
+2025-12-13 16:35:05 | INFO |    AUC for fold 4: 0.7471
+2025-12-13 16:35:08 | INFO |    AUC for fold 5: 0.7500
+2025-12-13 16:35:08 | INFO | [all] xgb FINAL OOF AUC: 0.7494
+2025-12-13 16:35:13 | INFO |    AUC for fold 1: 0.7640
+2025-12-13 16:35:18 | INFO |    AUC for fold 2: 0.7716
+2025-12-13 16:35:23 | INFO |    AUC for fold 3: 0.7605
+2025-12-13 16:35:28 | INFO |    AUC for fold 4: 0.7593
+2025-12-13 16:35:32 | INFO |    AUC for fold 5: 0.7676
+2025-12-13 16:35:32 | INFO | [all] lgb FINAL OOF AUC: 0.7646
+2025-12-13 16:35:47 | INFO |    AUC for fold 1: 0.7076
+2025-12-13 16:36:03 | INFO |    AUC for fold 2: 0.7013
+2025-12-13 16:36:20 | INFO |    AUC for fold 3: 0.6996
+2025-12-13 16:36:34 | INFO |    AUC for fold 4: 0.7047
+2025-12-13 16:36:51 | INFO |    AUC for fold 5: 0.7036
+2025-12-13 16:36:51 | INFO | [all] logreg FINAL OOF AUC: 0.7034
+2025-12-13 16:38:55 | INFO |    AUC for fold 1: 0.7044
+2025-12-13 16:41:01 | INFO |    AUC for fold 2: 0.7040
+2025-12-13 16:43:04 | INFO |    AUC for fold 3: 0.6988
+2025-12-13 16:45:10 | INFO |    AUC for fold 4: 0.6974
+2025-12-13 16:47:15 | INFO |    AUC for fold 5: 0.7017
+2025-12-13 16:47:16 | INFO | [all] rf FINAL OOF AUC: 0.7012
+2025-12-13 16:47:31 | INFO |    AUC for fold 1: 0.5534
+2025-12-13 16:47:46 | INFO |    AUC for fold 2: 0.5506
+2025-12-13 16:48:01 | INFO |    AUC for fold 3: 0.5478
+2025-12-13 16:48:16 | INFO |    AUC for fold 4: 0.5491
+2025-12-13 16:48:30 | INFO |    AUC for fold 5: 0.5486
+2025-12-13 16:48:30 | INFO | [all] knn FINAL OOF AUC: 0.5499
+2025-12-13 16:48:30 | INFO | [all] ✅ Top 3 Models by AUC: ['lgb', 'xgb', 'logreg']
+
+2025-12-13 16:48:31 | INFO | ✅ Completed: Training Base Models on ALL features in 819.95 seconds
+2025-12-13 16:48:31 | INFO | 🔄 Starting: Evaluating Holdout AUC
+2025-12-13 16:48:31 | INFO | 🎯 Ablation A — Holdout AUC: 0.7589
+2025-12-13 16:48:31 | INFO | 🎯 Ablation A completed successfully.
+2025-12-13 16:48:31 | INFO | ✅ Completed: Evaluating Holdout AUC in 0.51 seconds
+2025-12-13 17:04:43 | INFO | 🚀 Starting Ablation A (NO GROUPING, NUMERIC-ONLY, NO OHE)
+
+2025-12-13 17:04:43 | INFO | 🔄 Starting: Loading RAW datasets
+2025-12-13 17:04:48 | INFO | Demog RAW: (307511, 122)
+2025-12-13 17:04:48 | INFO | Deq RAW:   (263491, 322)
+2025-12-13 17:04:48 | INFO | Vin RAW:   (249507, 48)
+2025-12-13 17:04:48 | INFO | ✅ Completed: Loading RAW datasets in 5.15 seconds
+2025-12-13 17:04:48 | INFO | 🔄 Starting: Minimal preprocessing (NO OHE)
+2025-12-13 17:04:52 | INFO | Demog cleaned: (307511, 106)
+2025-12-13 17:04:52 | INFO | Deq cleaned:   (263491, 321)
+2025-12-13 17:04:52 | INFO | Vin cleaned:   (249507, 47)
+2025-12-13 17:04:52 | INFO | ✅ Completed: Minimal preprocessing (NO OHE) in 4.07 seconds
+2025-12-13 17:04:52 | INFO | 🔄 Starting: Merging datasets
+2025-12-13 17:04:55 | INFO | Merged shape: (249507, 472)
+2025-12-13 17:04:55 | INFO | ✅ Completed: Merging datasets in 2.95 seconds
+2025-12-13 17:04:55 | INFO | 🔄 Starting: Train/Test Split
+2025-12-13 17:04:56 | INFO | Train RAW: (187130, 472)
+2025-12-13 17:04:56 | INFO | Test RAW:  (62377, 472)
+2025-12-13 17:04:56 | INFO | ✅ Completed: Train/Test Split in 0.31 seconds
+2025-12-13 17:04:56 | INFO | 🔄 Starting: Scaling (fit on train → transform test)
+2025-12-13 17:04:57 | INFO | Scaled Train: (187130, 472)
+2025-12-13 17:04:57 | INFO | Scaled Test:  (62377, 472)
+2025-12-13 17:04:57 | INFO | ✅ Completed: Scaling (fit on train → transform test) in 1.28 seconds
+2025-12-13 17:04:57 | INFO | 🔄 Starting: Training Base Models on ALL features (OOF CV)
+2025-12-13 17:05:01 | INFO |    AUC for fold 1: 0.7500
+2025-12-13 17:05:04 | INFO |    AUC for fold 2: 0.7583
+2025-12-13 17:05:07 | INFO |    AUC for fold 3: 0.7416
+2025-12-13 17:05:11 | INFO |    AUC for fold 4: 0.7471
+2025-12-13 17:05:14 | INFO |    AUC for fold 5: 0.7500
+2025-12-13 17:05:14 | INFO | [all] xgb FINAL OOF AUC: 0.7494
+2025-12-13 17:05:19 | INFO |    AUC for fold 1: 0.7640
+2025-12-13 17:05:23 | INFO |    AUC for fold 2: 0.7716
+2025-12-13 17:05:28 | INFO |    AUC for fold 3: 0.7605
+2025-12-13 17:05:32 | INFO |    AUC for fold 4: 0.7593
+2025-12-13 17:05:36 | INFO |    AUC for fold 5: 0.7676
+2025-12-13 17:05:36 | INFO | [all] lgb FINAL OOF AUC: 0.7646
+2025-12-13 17:05:52 | INFO |    AUC for fold 1: 0.7076
+2025-12-13 17:06:06 | INFO |    AUC for fold 2: 0.7013
+2025-12-13 17:06:23 | INFO |    AUC for fold 3: 0.6996
+2025-12-13 17:06:38 | INFO |    AUC for fold 4: 0.7047
+2025-12-13 17:06:53 | INFO |    AUC for fold 5: 0.7036
+2025-12-13 17:06:53 | INFO | [all] logreg FINAL OOF AUC: 0.7034
+2025-12-13 17:08:58 | INFO |    AUC for fold 1: 0.7044
+2025-12-13 17:11:02 | INFO |    AUC for fold 2: 0.7040
+2025-12-13 17:13:04 | INFO |    AUC for fold 3: 0.6988
+2025-12-13 17:15:08 | INFO |    AUC for fold 4: 0.6974
+2025-12-13 17:17:14 | INFO |    AUC for fold 5: 0.7017
+2025-12-13 17:17:14 | INFO | [all] rf FINAL OOF AUC: 0.7012
+2025-12-13 17:17:28 | INFO |    AUC for fold 1: 0.5534
+2025-12-13 17:17:43 | INFO |    AUC for fold 2: 0.5506
+2025-12-13 17:17:57 | INFO |    AUC for fold 3: 0.5478
+2025-12-13 17:18:12 | INFO |    AUC for fold 4: 0.5491
+2025-12-13 17:18:27 | INFO |    AUC for fold 5: 0.5486
+2025-12-13 17:18:27 | INFO | [all] knn FINAL OOF AUC: 0.5499
+2025-12-13 17:18:27 | INFO | [all] ✅ Top 3 Models by AUC: ['lgb', 'xgb', 'logreg']
+
+2025-12-13 17:18:28 | INFO | ✅ Completed: Training Base Models on ALL features (OOF CV) in 810.68 seconds
+2025-12-13 17:18:28 | INFO | 🏆 Best model according to OOF: LGB
+2025-12-13 17:18:28 | INFO | 🔄 Starting: Retraining best model (lgb) on full train
+2025-12-13 17:18:33 | INFO | ✅ Completed: Retraining best model (lgb) on full train in 5.75 seconds
+2025-12-13 17:18:33 | INFO | 🔄 Starting: Final Test Evaluation
+2025-12-13 17:18:34 | INFO | 🎯 Ablation A — FINAL TEST AUC: 0.7612
+2025-12-13 17:18:34 | INFO | ✅ Completed: Final Test Evaluation in 0.38 seconds
+2025-12-13 17:18:34 | INFO | 🎉 Ablation A completed successfully.

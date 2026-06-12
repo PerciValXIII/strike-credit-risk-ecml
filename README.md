@@ -103,3 +103,8 @@ If you use STRIKE in your work, please cite:
 ## License
 
 This project is licensed under the MIT License.
+
+---
+
+## Contributors 
+Swattik Maiti, Ritik Pratap Singh, Fardina Alam

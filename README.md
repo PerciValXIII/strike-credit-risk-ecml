@@ -1,6 +1,6 @@
 # STRIKE: A Feature-Group-Aware Stacking Framework for Credit Default Prediction
 
-This repository contains the official implementation of **STRIKE**, introduced in our NeurIPS 2024 submission:  
+This repository contains the official implementation of **STRIKE**, introduced in our ECML PKDD 2026 ADS Track submission:  
 **"STRIKE: Stacking via Targeted Representations of Isolated Knowledge Extractors."**
 
 STRIKE is a modular stacking framework that enhances predictive performance by:
